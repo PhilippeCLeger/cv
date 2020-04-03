@@ -1,0 +1,24 @@
+  body{
+    background-color:#f9f7f7;
+    color: #112d4e;
+  }
+  hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 5px;
+    border-color: #dbe2ef;
+    width: 10%;
+  }
+  h1{
+    color: #3f72af;
+  }
+  h3{
+    color: #3f72af;
+  }
+  em{
+    color: #3f72af;
+  }
+
+  input:focus{
+    background-color: gold;
+  }
