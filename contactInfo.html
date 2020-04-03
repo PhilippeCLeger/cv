@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Philippe's personal site - Contact Info</title>
+</head>
+
+<body>
+  <a href="index.html"><img src="Pictures/SmallerCroppedProfilPicture.png" alt="A handsome fellow." width="200" height="200"></a>
+  <h1>Contact info</h1>
+  <p>
+    <ul>
+      <li>Phone : (123) 456-7890</li>
+      <li>Email : moncourriel@email.com</li>
+    </ul>
+  </p>
+  <button type="button" name="button" onclick="window.location.href = 'SendMessage.html'">Send a message</button>
+  <form class="" action="index.html" method="post" oninput="x.value = parseInt(a.value) + parseInt(b.value)">
+    <table cellspacing = 10>
+      <tr>
+        <td>
+          <fieldset>
+            <legend>Personnal Information</legend>
+            <label for="name">Your Name:</label>
+            <input type="text" name = "name"><br>
+            <label for="">City of residence</label>
+            <input list = "city" name = "city">
+            <datalist id = "city">
+              <option value="Deux-Montagnes">
+              <option value="Saint-Eustache">
+              <option value="Laval">
+                <option value="Deux-Collines">
+                  <option value="Ste-Foie">
+                    <option value="St-Joseph">
+            </datalist><br>
+            <input type="radio" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" value=""><br>
+          </fieldset>
+        </td>
+        <td>
+          <fieldset>
+            <legend>Preferences</legend>
+            <label for="">Favorite color</label>
+            <input type="color"> <br>
+            <label for="favWhiskey">Favorite Whiskey</label><br>
+            <select name="favWhiskey" multiple>
+              <optgroup label="Bourbons">
+                <option value="KnobCreek">Knob Creek</option>
+                <option value="BasilHaydens">Basil Hayden's</option>
+                <option value="WoodfordReserve">Woodford Reserve</option>
+                <option value="MakersMark">Maker's Mark</option>
+                <option value="Bullit">Bulleit</option>
+                <option value="BuffaloTrace">Buffalo Trace</option>
+                <option value="GentlemanJack">Gentleman Jack</option>
+              </optgroup>
+              <optgroup label="Scotch">
+                <option value="Glenfiddich">Glenfiddich</option>
+                <option value="MonkeyShoulder">MonkeyShoulder</option>
+                <option value="Aberfeldy">Aberfeldy</option>
+              </optgroup>
+            </select>
+          </fieldset>
+        </td>
+        <td>
+          <fieldset>
+            <legend>Computation</legend>
+            -250
+            <input type="range" id = "a" name="a" value="0" min="-250" max="250">
+            250 <br>
+            <input type="number" id="b" name="b" value="50"><br>
+            <label for="">Output = </label>
+            <output name="x" for="a b"></output><br>
+            <label for="">Choose a file to upload</label>
+            <input type="file" name="" value="">
+            <input type="button" onclick = "alert('File uploaded...lol not')" value="Upload">
+          </fieldset>
+        </td>
+      </tr>
+    </table>
+    <fieldset>
+      <legend>Send + Email</legend>
+      <label for="">Phone number</label>
+      <input type="tel" placeholder="(123) 456-7890" required>
+      <label for="emailList">Do you want to sign up to the email list?</label>
+      <input type="checkbox" name="emailList">
+      <input type="email">
+      <input type="submit">
+      <input type="reset">
+    </fieldset>
+  </form>
+</body>
+<footer>
+  <hr>
+  <p><a href="index.html">Home</a>  <a href="contactInfo.html">Contact info</a>  <a href="whiskey.html">Whiskey</a></p>
+</footer>
+</html>
